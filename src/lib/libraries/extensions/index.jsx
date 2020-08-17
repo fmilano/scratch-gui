@@ -317,5 +317,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'String utilities',
+        extensionId: 'stringutils',
+        collaborator: 'Federico Milano',
+        iconURL: gdxforIconURL,
+        insetIconURL: gdxforInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Substring, concatenate, uppercase, lowercase and other string utilities"
+                description="Common string utilities"
+                id="gui.extension.stringutils.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        helpLink: 'https://scratch.mit.edu/vernier'
     }
+
 ];
