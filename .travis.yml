@@ -15,6 +15,13 @@ env:
 cache:
   directories:
   - node_modules
+before_install:
+- cd ..
+- git clone https://${GH_TOKEN}@github.com/fmilano/scratch-vm.git scratch-vm
+- cd scratch-vm
+- npm install
+- npm link
+- cd ../scratch-gui
 install:
 - npm --production=false install
 script:
