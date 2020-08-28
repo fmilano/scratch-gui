@@ -26,9 +26,7 @@ before_install:
 install:
 - npm --production=false install
 script:
-- npm run-script build
-- echo "skipping tests"
-#- npm test
+- npm test
 before_deploy:
 - >
   if [ -z "$BEFORE_DEPLOY_RAN" ]; then
