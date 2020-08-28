@@ -25,7 +25,8 @@ before_install:
 - npm link scratch-vm
 install:
 - npm --production=false install
-#script:
+script:
+- echo "skipping tests"
 #- npm test
 before_deploy:
 - >
