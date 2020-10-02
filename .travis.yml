@@ -23,7 +23,7 @@ before_install:
 - npm link
 - cd ../scratch-gui
 install:
-- npm install
+- npm --production=false install
 - npm link scratch-vm
 script:
 - npm run-script build
