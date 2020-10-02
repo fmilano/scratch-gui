@@ -22,9 +22,9 @@ before_install:
 - npm install
 - npm link
 - cd ../scratch-gui
-- npm link scratch-vm
 install:
-- npm --production=false install
+- npm install
+- npm link scratch-vm
 script:
 - npm run-script build
 #- npm test
@@ -42,7 +42,7 @@ deploy:
 - provider: pages
   skip_cleanup: true
   github_token: ${GH_TOKEN}  # Set in the settings page of your repository, as a secure variable
-  keep_history: false
+  keep_history: true
   local_dir: build
   on:
     branch: develop
