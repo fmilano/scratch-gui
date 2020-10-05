@@ -46,6 +46,12 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import stringutilsIconURL from './stringutils/stringutils.png';
+import stringutilsInsetIconURL from './stringutils/stringutils-small.svg';
+import stringutilsConnectionIconURL from './stringutils/stringutils-illustration.svg';
+import stringutilsConnectionSmallIconURL from './stringutils/stringutils-small.svg';
+
+
 export default [
     {
         name: (
@@ -322,8 +328,8 @@ export default [
         name: 'String utilities',
         extensionId: 'stringutils',
         collaborator: 'Federico Milano',
-        iconURL: gdxforIconURL,
-        insetIconURL: gdxforInsetIconURL,
+        iconURL: stringutilsIconURL,
+        insetIconURL: stringutilsInsetIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Substring, concatenate, uppercase, lowercase and other string utilities"
